@@ -2,7 +2,7 @@
 
 Not ready yet, please look forward for this! Thanks.
 
-Total Downloads: { site.github.show_downloads }
+Total Downloads: {{ site.github.show_downloads }}
 
 | **Repository** | **Commits** | **Created** | **Updated** |
 | -------------- | ----------- | ----------- | ----------- |
