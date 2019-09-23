@@ -7,7 +7,7 @@ import { RepoListComponent } from './repo/repo-list/repo-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,7 @@ import { RouterModule } from '@angular/router';
     FlexLayoutModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
