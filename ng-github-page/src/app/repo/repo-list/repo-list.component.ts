@@ -11,7 +11,9 @@ import { of } from 'rxjs';
 })
 export class RepoListComponent implements OnInit {
   repoListApiUrl = environment.getReposUrl();
-  $repos = this.http.get(this.repoListApiUrl).pipe(mergeMap((repos) => this.$sort(repos, 'updated_at')));
+  $repos = this.http.get(this.repoListApiUrl, {
+    headers: { Authorization: 'token ' + environment.api.token },
+  }).pipe(mergeMap((repos) => this.$sort(repos, 'updated_at')));
   $sort = (list, prop) => of(list).pipe(map((repos) => repos.sort((a, b) => a[prop] > b[prop] ? -1 : 1)));
 
   constructor(private http: HttpClient) { }
