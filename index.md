@@ -2,12 +2,12 @@
 
 Not ready yet, please look forward for this! Thanks.
 
-Total Downloads: {site.github.show_downloads}
+Total Downloads: { site.github.show_downloads }
 
 | **Repository** | **Commits** | **Created** | **Updated** |
 
-{% for repository in site.github.public_repositories %}
+{% for repo in site.github.public_repositories %}
 |----------------|:-----------:|:-----------:|:-----------:|
-| [{{ repository.name }}]({{ repository.html_url }}) | 0 | - | - |
+| [{{ repo.name }}]({{ repo.html_url }}) | 0 | - | {{ repo.updatedAt }} |
 |----------------|:-----------:|:-----------:|:-----------:|
 {% endfor %}
