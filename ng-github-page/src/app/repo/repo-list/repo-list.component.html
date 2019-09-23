@@ -1,9 +1,9 @@
-<p>repo-list works!</p>
+<h1>My Repositories</h1>
 <div *ngIf="($repos | async) as repos">
     <div class="repo" *ngFor="let repo of repos">
         <p>Name: {{ repo.name }}</p>
-        <p>Created: {{ repo.createdAt }}</p>
-        <p>Updated: {{ repo.updatedAt }}</p>
+        <p>Created: {{ repo.created_at }}</p>
+        <p>Updated: {{ repo.updated_at }}</p>
         <p>Description: {{ repo.description }}</p>
         <p>Url: {{ repo.html_url }}</p>
     </div>
