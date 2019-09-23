@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { RepoListComponent } from './repo/repo-list/repo-list.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { RepoListComponent } from './repo/repo-list/repo-list.component';
   imports: [
     BrowserModule,
     HttpClientModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

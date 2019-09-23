@@ -1,2 +1,4 @@
 <p>repo-list works!</p>
-<pre *ngIf="($repos | async) as repos">{{ repos | json }}</pre>
+<div *ngIf="($repos | async) as repos">
+    <pre>{{ repos | json }}</pre>
+</div>
