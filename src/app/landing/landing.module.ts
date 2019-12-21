@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LandingComponent } from './landing.component';
-
+import { NzIconModule } from 'ng-zorro-antd/icon';
 
 
 @NgModule({
@@ -10,6 +10,7 @@ import { LandingComponent } from './landing.component';
   ],
   imports: [
     CommonModule,
+    NzIconModule,
   ],
   exports: [
   ]
