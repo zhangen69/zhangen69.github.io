@@ -1,3 +1,4 @@
+import { ArticleModule } from './article/article.module';
 import { HomeModule } from './home/home.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -19,6 +20,7 @@ registerLocaleData(en);
     BrowserAnimationsModule,
     AppRoutingModule,
     HomeModule,
+    ArticleModule,
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

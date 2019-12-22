@@ -1,0 +1,15 @@
+[
+  {
+    "id": "article-id",
+    "name": "This is an Article",
+    "description": "This is an Article Description",
+    "previewImageUrl": "",
+    "content": [
+      "Paragraph 1",
+      "Paragraph 2",
+      "Paragraph 3",
+      "Paragraph 4",
+      "Paragraph 5"
+    ]
+  }
+]
