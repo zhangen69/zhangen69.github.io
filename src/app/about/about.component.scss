@@ -1,0 +1,45 @@
+.section {
+  min-height: 100vh;
+
+  .title {
+    text-align: center;
+    position: relative;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      background-color: #101e3f;
+      width: 200px;
+      height: 3px;
+      margin-left: 10px;
+    }
+  }
+  
+  .description {
+    color: #101e3f;
+    width: 50vw;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 425px;
+
+@media (max-width: $breakpoint-tablet) {
+  .section {
+    .description {
+      width: 90vw;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .section {
+    .title::before{
+      width: 150px;
+      margin-left: 20px;
+    }
+  }
+}
