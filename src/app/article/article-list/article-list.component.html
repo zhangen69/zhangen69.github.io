@@ -1,2 +1,10 @@
-<p>article-list works!</p>
-<pre>{{ articles | json }}</pre>
+<!-- <p>article-list works!</p> -->
+
+<nz-card nzHoverable style="width:240px" [nzCover]="coverTemplate" *ngFor="let article of articles">
+  <ng-template #coverTemplate>
+    <img [alt]="article.name" [src]="article.imageUrl" />
+  </ng-template>
+  <nz-card-meta [nzTitle]="article.name" [nzDescription]="article.description"></nz-card-meta>
+</nz-card>
+
+<!-- <pre>{{ articles | json }}</pre> -->
