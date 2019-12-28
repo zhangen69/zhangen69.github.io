@@ -1,0 +1,24 @@
+.article-content {
+  h1 {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      background-color: #101e3f;
+      width: 200px;
+      height: 3px;
+      left: calc(50% - 100px);
+    }
+  }
+
+  .container {
+    width: 50vw;
+    margin: 0 auto;
+    font-size: 1.5rem;
+  }
+}

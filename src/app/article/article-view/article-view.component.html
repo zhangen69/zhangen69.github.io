@@ -1,1 +1,25 @@
-<p>article-view works!</p>
+<app-header></app-header>
+
+<div class="article-content">
+  <div *ngFor="let item of article.content" [ngSwitch]="item.t">
+    <h1 *ngSwitchCase="'Header'">
+      <span *ngFor="let c of item.c[2]" [ngSwitch]="c.t">
+        <span *ngSwitchCase="'Str'">{{ c.c }}</span>
+        <span *ngSwitchCase="'Space'">&nbsp;</span>
+      </span>
+    </h1>
+    <div class="container">
+        <ol *ngSwitchCase="'OrderedList'">
+          <li *ngFor="let c of item.c[1]">
+            <span *ngFor="let msg of c[0].c" [ngSwitch]="msg.t">
+              <span *ngSwitchCase="'Str'">{{ msg.c }}</span>
+              <span *ngSwitchCase="'Space'">&nbsp;</span>
+              <span *ngSwitchCase="'SoftBreak'"><br></span>
+              <span *ngSwitchCase="'RawInline'">{{ msg.c[1] }}</span>
+            </span>
+          </li>
+        </ol>
+    </div>
+  </div>
+</div>
+<!-- <pre>{{ article | json }}</pre> -->

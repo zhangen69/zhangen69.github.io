@@ -3,13 +3,316 @@
     "id": "article-id",
     "name": "This is an Article",
     "description": "This is an Article Description",
-    "imageUrl": "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
+    "imageUrl": "assets/images/redis-logo.png",
     "content": [
-      "Paragraph 1",
-      "Paragraph 2",
-      "Paragraph 3",
-      "Paragraph 4",
-      "Paragraph 5"
-    ]
+        {
+          "t": "Header",
+          "c": [
+            3,
+            ["download-and-install-redis-server-in-windows-10", [], []],
+            [
+              { "t": "Str", "c": "Download" },
+              { "t": "Space" },
+              { "t": "Str", "c": "and" },
+              { "t": "Space" },
+              { "t": "Str", "c": "Install" },
+              { "t": "Space" },
+              { "t": "Str", "c": "Redis" },
+              { "t": "Space" },
+              { "t": "Str", "c": "Server" },
+              { "t": "Space" },
+              { "t": "Str", "c": "in" },
+              { "t": "Space" },
+              { "t": "Str", "c": "Windows" },
+              { "t": "Space" },
+              { "t": "Str", "c": "10" }
+            ]
+          ]
+        },
+        {
+          "t": "OrderedList",
+          "c": [
+            [1, { "t": "Decimal" }, { "t": "Period" }],
+            [
+              [
+                {
+                  "t": "Plain",
+                  "c": [
+                    { "t": "Str", "c": "Download" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "latest" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "release" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "zip" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "file" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "from" },
+                    { "t": "Space" },
+                    {
+                      "t": "Str",
+                      "c": "https://github.com/MicrosoftArchive/redis/releases"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "t": "Plain",
+                  "c": [
+                    { "t": "Str", "c": "Compile" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "it" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "into" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "folder" }
+                  ]
+                }
+              ],
+              [
+                {
+                  "t": "Plain",
+                  "c": [
+                    { "t": "Str", "c": "Copy" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "the" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "Compilted" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "Folder" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "into" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "Your" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "C:/ProgramFiles/" },
+                    { "t": "SoftBreak" },
+                    { "t": "Str", "c": "Example" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "for" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "my" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "computer," },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "i" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "copied" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "the" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "folder" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "to" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "C:" },
+                    { "t": "RawInline", "c": ["tex", "\\Program "] },
+                    { "t": "Str", "c": "Files" },
+                    { "t": "RawInline", "c": ["tex", "\\Redis"] },
+                    { "t": "Str", "c": "-x64-3.0.504" }
+                  ]
+                }
+              ],
+              [
+                {
+                  "t": "Plain",
+                  "c": [
+                    { "t": "Str", "c": "Open" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "a" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "CMD" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "and" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "cd" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "to" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "the" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "target" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "folder" },
+                    { "t": "SoftBreak" },
+                    { "t": "Str", "c": ">" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "cd" },
+                    { "t": "Space" },
+                    {
+                      "t": "Quoted",
+                      "c": [
+                        { "t": "DoubleQuote" },
+                        [
+                          { "t": "Str", "c": "C:" },
+                          { "t": "RawInline", "c": ["tex", "\\Program "] },
+                          { "t": "Str", "c": "Files" },
+                          { "t": "RawInline", "c": ["tex", "\\Redis"] },
+                          { "t": "Str", "c": "-x64-3.0.504" }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "t": "Plain",
+                  "c": [
+                    { "t": "Str", "c": "Run" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "the" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "command" },
+                    { "t": "Space" },
+                    {
+                      "t": "Quoted",
+                      "c": [
+                        { "t": "DoubleQuote" },
+                        [{ "t": "Str", "c": "redis-server.exe" }]
+                      ]
+                    },
+                    { "t": "SoftBreak" },
+                    { "t": "Str", "c": ">" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "redis-server.exe" }
+                  ]
+                }
+              ],
+              [
+                {
+                  "t": "Plain",
+                  "c": [
+                    { "t": "Str", "c": "Exit" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "Redis" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "using" },
+                    { "t": "Space" },
+                    {
+                      "t": "Quoted",
+                      "c": [
+                        { "t": "DoubleQuote" },
+                        [
+                          { "t": "Str", "c": "Ctrl" },
+                          { "t": "Space" },
+                          { "t": "Str", "c": "+" },
+                          { "t": "Space" },
+                          { "t": "Str", "c": "C" }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "t": "Plain",
+                  "c": [
+                    { "t": "Str", "c": "Run" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "Redis" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "as" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "a" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "Background" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "Service" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "with" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "the" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "command" },
+                    { "t": "SoftBreak" },
+                    { "t": "Str", "c": ">" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "redis-server" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "–service-install" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "redis.windows.conf" }
+                  ]
+                }
+              ],
+              [
+                {
+                  "t": "Plain",
+                  "c": [
+                    { "t": "Str", "c": "Double" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "Check" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "the" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "service" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "is" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "created" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "and" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "running," },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "open" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "CMD" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "and" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "enter" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "the" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "commands:" },
+                    { "t": "SoftBreak" },
+                    { "t": "Str", "c": ">" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "services.msc" }
+                  ]
+                }
+              ],
+              [
+                {
+                  "t": "Plain",
+                  "c": [
+                    { "t": "Str", "c": "Search" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "the" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "service’s" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "name" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "as" },
+                    { "t": "Space" },
+                    {
+                      "t": "Quoted",
+                      "c": [
+                        { "t": "DoubleQuote" },
+                        [{ "t": "Str", "c": "Redis" }]
+                      ]
+                    },
+                    { "t": "Str", "c": "," },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "ensure" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "that" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "it’s" },
+                    { "t": "Space" },
+                    { "t": "Str", "c": "running" }
+                  ]
+                }
+              ]
+            ]
+          ]
+        }
+      ]
   }
 ]

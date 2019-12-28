@@ -1,0 +1,49 @@
+$header-height: 100px;
+
+.page-header {
+  min-height: $header-height;
+  height: $header-height;
+  justify-content: start;
+
+  .nav-links {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-left: 15px;
+
+      li {
+        display: inline-block;
+        padding: 5px 10px;
+
+        & > a {
+          color: #fff;
+
+          &:hover {
+            .hover {
+              display: inline;
+            }
+            .default {
+              display: none;
+            }
+          }
+
+          & > i {
+            font-size: 2rem; 
+          }
+
+          & > img {
+            height: 32px;
+            vertical-align: bottom;
+    
+            &.hover {
+              display: none;
+            }
+            &.default {
+              display: inline;
+            }
+          }
+        }
+      }
+    }
+  }
+}

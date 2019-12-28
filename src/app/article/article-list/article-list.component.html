@@ -1,6 +1,6 @@
-<!-- <p>article-list works!</p> -->
+<app-header></app-header>
 
-<nz-card nzHoverable style="width:240px" [nzCover]="coverTemplate" *ngFor="let article of articles">
+<nz-card nzHoverable class="article-item" [nzCover]="coverTemplate" *ngFor="let article of articles" [routerLink]="['/article/view/' + article.id]">
   <ng-template #coverTemplate>
     <img [alt]="article.name" [src]="article.imageUrl" />
   </ng-template>
