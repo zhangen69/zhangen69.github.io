@@ -1,7 +1,13 @@
-.article-item {
-  width: 240px;
+.article-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
-  img {
-    padding: 10px;
+  .article-item {
+    width: 30vw;
+  
+    img {
+      padding: 20px 10px;
+    }
   }
 }

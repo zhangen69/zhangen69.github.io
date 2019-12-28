@@ -1,8 +1,7 @@
 [
   {
-    "id": "article-id",
-    "name": "This is an Article",
-    "description": "This is an Article Description",
+    "id": "download-and-install-redis-server-in-windows-10",
+    "name": "Download and Install Redis Server in Windows 10",
     "imageUrl": "assets/images/redis-logo.png",
     "content": [
         {

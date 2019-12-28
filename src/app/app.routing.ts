@@ -9,8 +9,8 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'article',
     children: [
-      { path: 'list', component: ArticleListComponent },
-      { path: 'view/:id', component: ArticleViewComponent },
+      { path: '', component: ArticleListComponent },
+      { path: ':id', component: ArticleViewComponent },
     ]
   },
   { path: '**', component: HomeComponent }
@@ -18,7 +18,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { onSameUrlNavigation: 'reload' })
+    RouterModule.forRoot(routes, { onSameUrlNavigation: 'reload', anchorScrolling: 'enabled' })
   ],
   exports: [RouterModule],
 })

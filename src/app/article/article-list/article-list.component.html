@@ -1,10 +1,11 @@
 <app-header></app-header>
-
-<nz-card nzHoverable class="article-item" [nzCover]="coverTemplate" *ngFor="let article of articles" [routerLink]="['/article/view/' + article.id]">
-  <ng-template #coverTemplate>
-    <img [alt]="article.name" [src]="article.imageUrl" />
-  </ng-template>
-  <nz-card-meta [nzTitle]="article.name" [nzDescription]="article.description"></nz-card-meta>
-</nz-card>
+<div class="article-wrapper">
+  <nz-card nzHoverable class="article-item" [nzCover]="coverTemplate" *ngFor="let article of articles" [routerLink]="['/article/' + article.id]">
+    <ng-template #coverTemplate>
+      <img [alt]="article.name" [src]="article.imageUrl" />
+    </ng-template>
+    <nz-card-meta [nzTitle]="article.name"></nz-card-meta>
+  </nz-card>
+</div>
 
 <!-- <pre>{{ articles | json }}</pre> -->

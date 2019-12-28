@@ -5,14 +5,18 @@ import { ArticleListComponent } from './article-list/article-list.component';
 import { ArticleViewComponent } from './article-view/article-view.component';
 import { NzCardModule } from 'ng-zorro-antd/card';
 import { RouterModule } from '@angular/router';
+import { ArticleLatestComponent } from './article-latest/article-latest.component';
 
 @NgModule({
-  declarations: [ArticleListComponent, ArticleViewComponent],
+  declarations: [ArticleListComponent, ArticleViewComponent, ArticleLatestComponent],
   imports: [
     CommonModule,
     NzCardModule,
     RouterModule,
     SharedModule,
+  ],
+  exports: [
+    ArticleLatestComponent
   ]
 })
 export class ArticleModule { }
