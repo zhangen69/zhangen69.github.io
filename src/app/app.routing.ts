@@ -1,3 +1,4 @@
+import { ArticleFormComponent } from './article/article-form/article-form.component';
 import { ArticleViewComponent } from './article/article-view/article-view.component';
 import { ArticleListComponent } from './article/article-list/article-list.component';
 import { HomeComponent } from './home/home.component';
@@ -10,6 +11,7 @@ const routes: Routes = [
   { path: 'article',
     children: [
       { path: '', component: ArticleListComponent },
+      { path: 'form', component: ArticleFormComponent },
       { path: ':id', component: ArticleViewComponent },
     ]
   },

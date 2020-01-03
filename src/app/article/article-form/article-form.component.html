@@ -1,2 +1,4 @@
 <p>article-form works!</p>
-<ckeditor [editor]="Editor" data="<p>Hello, world!</p>" (ready)="onReady($event)"></ckeditor>
+<input type="text" [(ngModel)]="title">
+<ckeditor [(ngModel)]="editorData" [editor]="Editor" [config]="ckeditorConfigs" [data]="editorData" (ready)="onReady($event)"></ckeditor>
+<button type="submit" (click)="onSubmit()">Submit</button>

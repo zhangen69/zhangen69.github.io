@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { ArticleLatestComponent } from './article-latest/article-latest.component';
 import { ArticleFormComponent } from './article-form/article-form.component';
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [ArticleListComponent, ArticleViewComponent, ArticleLatestComponent, ArticleFormComponent],
@@ -17,6 +18,7 @@ import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
     RouterModule,
     SharedModule,
     CKEditorModule,
+    FormsModule,
   ],
   exports: [
     ArticleLatestComponent
